@@ -23,9 +23,24 @@ window.addEventListener('DOMContentLoaded',function(){
 
     const checkbox = document.querySelector("#checkbox")
 
-    li.innerHTML = tarefa.value
     
-    li_data.innerHTML = data.value
+
+    /*
+     Objetos
+     */
+
+     const obj = {
+
+        nome: tarefa.value,
+
+        data_entrega : data.value
+
+     }
+
+
+    li.innerHTML = obj.nome
+    
+    li_data.innerHTML = obj.data_entrega
 
     if (dificuldade.selectedIndex = 0 ) {
 
