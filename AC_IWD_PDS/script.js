@@ -16,14 +16,6 @@ window.addEventListener('DOMContentLoaded',function(){
     
     lista.appendChild(div)
 
-    const li = document.createElement("p")
-    const li_data = document.createElement("p")
-
-    const li_combo = document.createElement("p")
-
-    const checkbox = document.querySelector("#checkbox")
-
-    
 
     /*
      Objetos
@@ -31,32 +23,35 @@ window.addEventListener('DOMContentLoaded',function(){
 
      const obj = {
 
-        nome: tarefa.value,
+        nome: document.createElement("p"),
 
-        data_entrega : data.value
+        data_entrega : document.createElement("p"),
 
+        dificuldade:document.createElement("p"),
+
+        importante:document.querySelector("#checkbox")
      }
 
 
-    li.innerHTML = obj.nome
+    obj.nome.innerHTML = tarefa.value
     
-    li_data.innerHTML = obj.data_entrega
+    obj.data_entrega.innerHTML = data.value
 
-    if (dificuldade.selectedIndex = 0 ) {
+    if (obj.dificuldade.selectedIndex = 0 ) {
 
-        li_combo.innerHTML = "Fácil"
+        obj.dificuldade.innerHTML = "Fácil"
             
     }
 
-    else if (dificuldade.selectedIndex = 1 ) {
+    else if (obj.dificuldade.selectedIndex = 1 ) {
 
-        li_combo.innerHTML = "Médio"
+        obj.dificuldade.innerHTML = "Médio"
             
     }
 
-    else if (dificuldade.selectedIndex = 2 ) {
+    else if (obj.dificuldade.selectedIndex = 2 ) {
 
-        li_combo.innerHTML = "Difcil"
+        obj.dificuldade.innerHTML = "Difcil"
             
     }
 
@@ -69,14 +64,14 @@ window.addEventListener('DOMContentLoaded',function(){
     /**/
 
 
-    li.className ="mm"
+    obj.nome.className ="mm"
 
     
-    div.appendChild(li) 
-    div.appendChild(li_data)
-    div.appendChild(li_combo)       
+    div.appendChild(obj.nome) 
+    div.appendChild(obj.data_entrega)
+    div.appendChild(obj.dificuldade)       
 
-    if (checkbox.checked) {
+    if (obj.importante.checked) {
         const img = document.createElement("img")
 
 
