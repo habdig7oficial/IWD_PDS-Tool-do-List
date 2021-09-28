@@ -4,9 +4,10 @@ window.addEventListener('DOMContentLoaded',function(){
     const lista = document.querySelector("#lista")
     const tarefa = document.querySelector("#tarefa")
 
+    
     const data = document.querySelector("#data")
 
-
+    const dificuldade =  document.querySelector("#dificuldade")
 
     btn.addEventListener("click",function(){
 
@@ -37,19 +38,19 @@ window.addEventListener('DOMContentLoaded',function(){
     
     obj.data_entrega.innerHTML = data.value
 
-    if (obj.dificuldade.selectedIndex = 0 ) {
+    if (dificuldade.selectedIndex == 0 ) {
 
         obj.dificuldade.innerHTML = "Fácil"
             
     }
 
-    else if (obj.dificuldade.selectedIndex = 1 ) {
+    else if (dificuldade.selectedIndex == 1 ) {
 
         obj.dificuldade.innerHTML = "Médio"
             
     }
 
-    else if (obj.dificuldade.selectedIndex = 2 ) {
+    else if (dificuldade.selectedIndex == 2 ) {
 
         obj.dificuldade.innerHTML = "Difcil"
             
@@ -66,6 +67,23 @@ window.addEventListener('DOMContentLoaded',function(){
 
     obj.nome.className ="mm"
 
+
+
+
+    /*Correção  */
+
+
+    obj.nome.style= "padding-right:15rem;"
+    obj.nome.style= "margin-left:0.5rem;"
+    
+
+
+    obj.data_entrega.style ="padding-right:5rem;"
+
+    obj.dificuldade.style = "padding-right:5rem;"
+
+
+    
     
     div.appendChild(obj.nome) 
     div.appendChild(obj.data_entrega)
@@ -79,7 +97,9 @@ window.addEventListener('DOMContentLoaded',function(){
         img.src= "https://i.pinimg.com/originals/19/29/df/1929dfe2b710f9807123f9b7b64079ec.jpg"
         img.setAttribute("class","tc")
         div.style.backgroundColor = "rgb(254, 204, 203)"
+        img.style.backgroundColor = "rgb(255, 255, 203)"
         img.alt = "importante"
+        
         div.appendChild(img) 
     }
 

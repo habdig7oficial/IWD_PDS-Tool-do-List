@@ -44,7 +44,7 @@ label{
 }
 
 input{
-    width:10rem;
+  justify-content: center;
 }
 
 .vertical{
@@ -81,7 +81,9 @@ form
 
     border-bottom:solid 0.2rem #fff;
 
+
     margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 
@@ -90,13 +92,15 @@ form
     background-color: rgb(236, 236, 236);
     border:solid 0.2rem #fff;
 
+
 }
 
 .normal p{
-    padding-right: 2rem;
+
 
     border-right:solid 0.15rem #fff;
 }
+
 
 #lista{
     background-color: #fff;
@@ -108,7 +112,7 @@ form
 
     width:90% ;
 
-
+    color: #fff;
 
     margin-left: 3rem;
 
